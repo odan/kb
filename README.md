@@ -1,3 +1,3 @@
-# odan.github.io
+# Knowledge Base
 
-Visit my github page: https://odan.github.io
+<https://odan.github.io/kb>
