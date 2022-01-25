@@ -29,11 +29,10 @@ parent: Linux
 * Mount the CD-ROM:
 * `sudo mkdir -p /mnt/cdrom`
 * `sudo mount /dev/cdrom /mnt/cdrom`
-  Navigate to the mounted CD-Rom and run the `VBoxLinuxAdditions.run`
-  script to install the Guest Additions.
+* Navigate to the mounted CD-Rom and run the `VBoxLinuxAdditions.run` script to install the Guest Additions.
 * `cd /mnt/cdrom`
 * `sudo sh ./VBoxLinuxAdditions.run --nox11`
-* Reboot the Server for changes to take effect: `sudo init 6`
+* Reboot the Server `sudo init 6`
 
 Read more: [How to Install VirtualBox Guest Additions on Ubuntu](https://linuxize.com/post/how-to-install-virtualbox-guest-additions-in-ubuntu/)
 
