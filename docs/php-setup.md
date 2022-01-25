@@ -23,7 +23,7 @@ add-apt-repository ppa:ondrej/php
 apt update
 ```
 
-Copy this installation sh script to `/shared/setup.sh`
+Create this installation sh script: `setup.sh`
 
 ```sh
 #!/usr/bin/env bash
@@ -58,13 +58,13 @@ composer self-update
 Set execute permission:
 
 ```
-chmod +x /shared/setup.sh
+chmod +x setup.sh
 ```
 
 Run the setup script:
 
 ```
-./shared/setup.sh
+./setup.sh
 ```
 
 Add `vboxsf` to apache `www-data` group:
@@ -85,7 +85,7 @@ Reboot.
 
 * Start the VM
 * Login as super user `sudo su`
-* Copy this installation sh script to `/shared/setup.sh`
+* Copy this installation sh script to `setup.sh`
 
 ```sh
 #!/usr/bin/env bash
@@ -118,13 +118,13 @@ composer self-update
 Set execute permission:
 
 ```
-sudo chmod +x /shared/setup.sh
+sudo chmod +x setup.sh
 ```
 
 Run the setup script:
 
 ```
-./shared/setup.sh
+./setup.sh
 ```
 
 Add `vboxsf` to apache `www-data` group:
@@ -143,7 +143,7 @@ Reboot.
 
 ## Testing
 
-On the guest VM open `http://192.168.0.172`in your browser to the hosted website.
+On the guest VM open `http://192.168.0.172` in your browser to the hosted website.
 Change the IP address as shown in `ifconfig`
 
 Please note: When you start the VM it will take some seconds until
