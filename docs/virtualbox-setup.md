@@ -11,7 +11,15 @@ parent: Linux
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-## Ubuntu Server prerequisites
+## VirtualBox Guest Additions on Linux Mint
+
+* From the virtual machine menu, click `Devices` -> `Insert Guest Additions CD Image`.
+* Open the terminal and enter:
+* `cd /media/user/VBox_GAs_6.1.26/`
+* `sudo sh ./VBoxLinuxAdditions.run --nox11`
+* Reboot: `sudo init 6`
+
+## VirtualBox Guest Additions on Ubuntu Server
 
 * Start the Ubuntu guest virtual machine
 * Login to the Ubuntu guest as a sudo user and install the packages required for building external kernel modules:
@@ -21,12 +29,8 @@ parent: Linux
 * Mount the CD-ROM:
 * `sudo mkdir -p /mnt/cdrom`
 * `sudo mount /dev/cdrom /mnt/cdrom`
-
-## Guest Extension Setup
-
-Navigate to the mounted CD-Rom and run the `VBoxLinuxAdditions.run` 
-script to install the Guest Additions.
-
+  Navigate to the mounted CD-Rom and run the `VBoxLinuxAdditions.run`
+  script to install the Guest Additions.
 * `cd /mnt/cdrom`
 * `sudo sh ./VBoxLinuxAdditions.run --nox11`
 * Reboot the Server for changes to take effect: `sudo init 6`
