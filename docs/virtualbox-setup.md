@@ -11,7 +11,7 @@ parent: Linux
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-## Guest Extension Setup
+## Ubuntu Server prerequisites
 
 * Start the Ubuntu guest virtual machine
 * Login to the Ubuntu guest as a sudo user and install the packages required for building external kernel modules:
@@ -21,11 +21,15 @@ parent: Linux
 * Mount the CD-ROM:
 * `sudo mkdir -p /mnt/cdrom`
 * `sudo mount /dev/cdrom /mnt/cdrom`
-* Navigate to the directory and run the VBoxLinuxAdditions.run script to install the Guest Additions.
+
+## Guest Extension Setup
+
+Navigate to the mounted CD-Rom and run the `VBoxLinuxAdditions.run` 
+script to install the Guest Additions.
+
 * `cd /mnt/cdrom`
 * `sudo sh ./VBoxLinuxAdditions.run --nox11`
-* Reboot the Ubuntu guest for changes to take effect:
-  `sudo shutdown -r now`
+* Reboot the Server for changes to take effect: `sudo init 6`
 
 Read more: [How to Install VirtualBox Guest Additions on Ubuntu](https://linuxize.com/post/how-to-install-virtualbox-guest-additions-in-ubuntu/)
 
@@ -51,5 +55,5 @@ Read more: <https://gist.github.com/estorgio/1d679f962e8209f8a9232f7593683265>
 * Select the mode: "Allow all and host"
 * Click on "Ok" to save all settings.
 * Start the VM
-* Login as super user with `sudo su`
+* Login as super-user with `sudo su`
 * Enter `ifconfig` to find the local ip address, e.g. `192.168.0.172`
