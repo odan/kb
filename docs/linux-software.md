@@ -158,8 +158,8 @@ Downloads: <https://github.com/webyog/sqlyog-community/wiki/Downloads>
 
 ```
 sudo apt install wine-stable
-wget https://s3.amazonaws.com/SQLyog_Community/SQLyog+13.1.7/SQLyog-13.1.7-0.x64Community.exe
-sudo wine SQLyog-13.1.7-0.x64Community.exe
+wget https://s3.amazonaws.com/SQLyog_Community/SQLyog+13.1.9/SQLyog-13.1.9-0.x64Community.exe
+sudo wine SQLyog-13.1.9-0.x64Community.exe
 ```
 
 ## Microsoft Teams
@@ -204,7 +204,7 @@ sudo apt remove --purge -y libreoffice*
 sudo apt remove --purge -y libjuh*
 
 # Remove all LibreOffice start menu icons
-find ~/.local/share/applications/ -type f -name '*libreoffice*.desktop' -delete
+sudo find ~/.local/share/applications/ -type f -name '*libreoffice*.desktop' -delete
 
 # Gimp
 sudo apt remove --purge -y gimp

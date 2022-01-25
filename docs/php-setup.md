@@ -33,7 +33,7 @@ apt install vim unzip -y
 apt install libapache2-mod-php8.1 php8.1
 apt install mysql-client libmysqlclient-dev -y
 apt install php8.1-mysql php8.1-sqlite3 -y
-#apt install php8.1-mbstring php8.1-curl php8.1-intl php8.1-gd php8.1-zip php8.1-bz2 -y
+apt install php8.1-mbstring php8.1-curl php8.1-intl php8.1-gd php8.1-zip php8.1-bz2 -y
 apt install php8.1-dom php8.1-xml php8.1-soap -y
 
 a2enmod php8.1
@@ -73,19 +73,13 @@ Add `vboxsf` to apache `www-data` group:
 usermod -a -G vboxsf www-data
 ```
 
-Restart apache:
-
-```
-service apache2 restart
-```
-
 Add current user to vboxsf group:
 
 ```
 sudo usermod -aG vboxsf $USER
 ```
 
-Logout and in for the change to take effect.
+Reboot.
 
 ## Apache with PHP 7.4
 
@@ -119,9 +113,6 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 php -r "unlink('composer-setup.php');"
 composer self-update
-
-# Disable cloud-init in Ubuntu
-touch /etc/cloud/cloud-init.disabled
 ```
 
 Set execute permission:
@@ -139,14 +130,16 @@ Run the setup script:
 Add `vboxsf` to apache `www-data` group:
 
 ```
-sudo usermod -a -G vboxsf www-data
+usermod -a -G vboxsf www-data
 ```
 
-Restart apache:
+Add current user to vboxsf group:
 
 ```
-sudo service apache2 restart
+sudo usermod -aG vboxsf $USER
 ```
+
+Reboot.
 
 ## Testing
 

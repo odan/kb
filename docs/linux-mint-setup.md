@@ -10,7 +10,7 @@ parent: Linux
 ## Download
 
 * Download the latest ISO from [the Linux mint website](https://linuxmint.com/)
-* Optional: Copy the ISO file with [E](https://www.balena.io/etcher/) to a USB stick and install it.
+* Optional: Copy the ISO file with [Etcher](https://www.balena.io/etcher/) to a USB stick and install it.
 
 ## Install Virtualbox guest extension
 
