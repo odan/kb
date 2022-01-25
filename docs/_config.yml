@@ -1,0 +1,13 @@
+plugins:
+  - jekyll-include-cache
+
+remote_theme: "pmarsceill/just-the-docs"
+
+# Name of your site (displayed in the header)
+name: Knowledge Base
+
+# Name of website (site.title)
+title: Knowledge Base
+
+# Short description of your site
+description: A knowledge base
