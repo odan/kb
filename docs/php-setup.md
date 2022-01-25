@@ -20,7 +20,7 @@ parent: Linux
 
 ```
 sudo dpkg-reconfigure cloud-init
-sudo apt-get purge cloud-init
+sudo apt purge cloud-init
 sudo apt autoremove
 sudo rm -rf /etc/cloud/ && sudo rm -rf /var/lib/cloud/
 sudo reboot now
@@ -157,12 +157,12 @@ Logout and in for the change to take effect.
 ```sh
 #!/usr/bin/env bash
 
-apt-get update
-apt-get install vim unzip apache2 -y
-apt-get install mysql-client libmysqlclient-dev -y
-apt-get install libapache2-mod-php7.4 php7.4 php7.4-mysql php7.4-sqlite -y
-apt-get install php7.4-mbstring php7.4-curl php7.4-intl php7.4-gd php7.4-zip php7.4-bz2 -y
-apt-get install php7.4-dom php7.4-xml php7.4-soap -y
+apt update
+apt install vim unzip apache2 -y
+apt install mysql-client libmysqlclient-dev -y
+apt install libapache2-mod-php7.4 php7.4 php7.4-mysql php7.4-sqlite -y
+apt install php7.4-mbstring php7.4-curl php7.4-intl php7.4-gd php7.4-zip php7.4-bz2 -y
+apt install php7.4-dom php7.4-xml php7.4-soap -y
 
 a2enmod rewrite
 a2enmod actions

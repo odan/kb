@@ -131,7 +131,7 @@ If you want to install chromium instead, run:
 sudo snap install chromium
 ```
 
-Or with apt-get:
+Or with apt:
 
 ```
 sudo apt install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg 
