@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Knowledge Base
+title: Home
 nav_order: 1
 ---
