@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VirtualBox - PHP Development environment
+title: PHP Development Server
 published: true
 parent: Linux
 ---

@@ -5,12 +5,12 @@ published: true
 parent: Linux
 ---
 
-# Linux Mint XFCE Setup for PHP developers
+# Linux Mint Setup for PHP developers
 
-## Linux Mint Setup
+## Download
 
-* Download the latest ISO from [the Linux mint website](https://blog.linuxmint.com/?p=4013)
-* Copy the ISO file with [E](https://www.balena.io/etcher/) to a USB stick and install it.
+* Download the latest ISO from [the Linux mint website](https://linuxmint.com/)
+* Optional: Copy the ISO file with [E](https://www.balena.io/etcher/) to a USB stick and install it.
 
 ## Install Virtualbox guest extension
 
@@ -83,7 +83,7 @@ sudo apt update
 sudo apt install snapd
 ```
 
-## Install PhpStorm
+## PhpStorm
 
 PhpStorm is available in the Software Manager, but the Setup will not work.
 For this reason I prefer to install it manually.
@@ -97,7 +97,9 @@ Change keyboard shortcut for `xflock4` to `Shift+Ctrl+L`
 
 ### PhpStorm Themes
 
-[Photon color Theme for PhpStorm](https://github.com/brendt/phpstorm-photon-theme)
+* <https://github.com/odan/phpstorm-color-schemes>
+* [Github 3 Theme for PhpStorm](https://plugins.jetbrains.com/plugin/12271-github-3-color-scheme)
+* [Photon color Theme for PhpStorm](https://github.com/brendt/phpstorm-photon-theme)
 
 ```
 su user
@@ -105,8 +107,6 @@ cd ~/Downloads
 wget https://raw.githubusercontent.com/brendt/phpstorm-photon-theme/master/Photon%20-%20Dark.icls -O Photon-Dark.icls
 wget https://raw.githubusercontent.com/brendt/phpstorm-photon-theme/master/Photon%20-%20Light.icls -O Photon-Light.icls
 ```
-
-[Github 3 Theme for PhpStorm](https://plugins.jetbrains.com/plugin/12271-github-3-color-scheme)
 
 ## Install Google Chrome
 
@@ -139,13 +139,11 @@ sudo apt install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg
 
 ## Wine
 
+Optional
+
 ```
 sudo apt install wine-stable 
 ```
-
-## Install Apache and PHP with XDebug
-
-...
 
 ## Fonts
 
