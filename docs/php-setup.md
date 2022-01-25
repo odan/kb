@@ -140,11 +140,3 @@ sudo usermod -aG vboxsf $USER
 ```
 
 Reboot.
-
-## Testing
-
-On the guest VM open `http://192.168.0.172` in your browser to the hosted website.
-Change the IP address as shown in `ifconfig`
-
-Please note: When you start the VM it will take some seconds until
-apache is started. 

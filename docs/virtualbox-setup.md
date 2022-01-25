@@ -57,3 +57,11 @@ Read more: <https://gist.github.com/estorgio/1d679f962e8209f8a9232f7593683265>
 * Start the VM
 * Login as super-user with `sudo su`
 * Enter `ifconfig` to find the local ip address, e.g. `192.168.0.172`
+
+## Testing
+
+On the guest VM open `http://192.168.0.172` in your browser to the hosted website.
+Change the IP address as shown in `ifconfig`
+
+Please note: When you start the VM it will take some seconds until
+apache is started.
