@@ -215,3 +215,35 @@ sudo apt remove --purge -y thunderbird
 sudo apt clean
 sudo apt autoremove
 ```
+
+## Powerline Shell
+
+<https://github.com/b-ryan/powerline-shell>
+
+```
+sudo apt install python3-pip
+sudo pip install powerline-shell
+sudo apt install fonts-powerline
+```
+
+Add the following to your .bashrc file:
+
+```
+vim ~/.bashrc
+```
+
+Scroll down, press "a" and add this: 
+
+```
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+```
+
+Press escape, enter: `:qw!` to save the file.
+
+Open a new console window.
