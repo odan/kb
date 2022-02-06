@@ -226,10 +226,11 @@ sudo pip install powerline-shell
 sudo apt install fonts-powerline
 ```
 
-Add the following to your .bashrc file:
+Add the following to your global .bashrc file:
 
 ```
-vim ~/.bashrc
+sudo su
+vim /etc/bash.bashrc
 ```
 
 Scroll down, press "a" and add this: 
@@ -244,6 +245,6 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 fi
 ```
 
-Press escape, enter: `:qw!` to save the file.
+Press escape, enter: `:wq!` to save the file.
 
 Open a new console window.
